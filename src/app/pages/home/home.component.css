@@ -1,0 +1,29 @@
+.dev_img {
+    /* float: right; */
+    position: absolute;
+    right: 0;
+    width: 52%;
+    bottom: calc(-62% - 100%);
+}
+
+.porfolio img{
+    filter: grayscale(0.9);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+.porfolio img:hover{
+    transform: translateY(-10px);
+    filter: grayscale(0);
+    transition: 0.3s ease-in-out;
+
+}
+@media screen and (max-width: 680px) {
+    .dev_img {
+            width: 61%;
+    bottom: calc(-116% - 100%);
+    right: -15px;
+    }
+    .mpbile_mar {
+        margin-top: 0px !important;
+    }
+}
