@@ -18,7 +18,7 @@ export class AppComponent implements AfterViewInit {
     this.flowbiteService.loadFlowbite((flowbite) => {
       initDropdowns()
       initCollapses()
-      console.log('✅ Flowbite loaded:', flowbite);
+      // console.log('✅ Flowbite loaded:', flowbite);
     });
   }
 

@@ -5,9 +5,9 @@
 
 @import "flowbite/src/themes/default";
 
-@plugin "flowbite/plugin";
+/* @plugin "flowbite/plugin"; */
 
-@source "../node_modules/flowbite";
+/* @source "../node_modules/flowbite"; */
 
 
 body{

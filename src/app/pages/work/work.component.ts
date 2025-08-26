@@ -25,14 +25,14 @@ export class WorkComponent implements OnInit {
     this.proFIlterQ(`projects/filter?technologySlug=all`)
     this.flowbiteService.loadFlowbite((flowbite) => {
       initDropdowns();
-      console.log('✅ Flowbite loaded:', flowbite);
+      // console.log('✅ Flowbite loaded:', flowbite);
     });
   }
 
   proFIlterQ(endpoint: string) {
     this.globalServices.getRequest('', endpoint).subscribe({
       next: (val: any) => {
-        console.log(val.projects);
+        // console.log(val.projects);
         this.techProject = val.projects;
       
        
@@ -44,10 +44,10 @@ export class WorkComponent implements OnInit {
   prpjectsFn(endpoint: string) {
     this.globalServices.getRequest('', endpoint).subscribe({
       next: (val: any) => {
-        console.log(val);
+        // console.log(val);
         this.message = val.code
         this.projects = val.projects;
-        console.log(this.message)
+        // console.log(this.message)
       },
       error: (err: any) => {},
     });
